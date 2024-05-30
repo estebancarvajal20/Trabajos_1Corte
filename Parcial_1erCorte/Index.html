@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Parcial_1erCorte</title>
+    </head>
+    <body>
+        <div class="registration-form">
+            <form method="post" action="controladores/base_de_datos.php">
+                <div class="form-title">
+                    <h1>ONLY FANS</h1>
+                    <p>Rellena la información para completar tu registro. Solo +18</p>
+                </div>
+                <div class="form-group">
+                    <label>Documento</label>
+                    <input type="number" id="doc" name="doc" class="form-control item" placeholder="Ingresa tu documento" required>
+                </div>
+                <div class="form-group">
+                    <label>Nombre Completo</label>
+                    <input type="text" id="full-name" name="full_name" class="form-control item" placeholder="Ingresa tu nombre completo" required>
+                </div>
+                <div class="form-group">
+                    <label>Año de Nacimiento</label>
+                    <input type="number" id="birth" name="birth" class="form-control item" placeholder="Ingresa el año de nacimiento" required>
+                </div>
+                <div class="form-group">
+                    <label>Celular</label>
+                    <input type="tel"id="phone" name="phone" class="form-control item" placeholder="Ingresa tu celular" required>
+                </div>
+                <div class="form-group">
+                    <label>Genero</label>
+                    <select name="gender" class="form-control item">
+                        <option value="" disabled selected>Selecciona una Opcion</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Femenino">Femenino</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" id="save" class="btn btn-block create-account">Registarse</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
+
+
+
+    
+
+<!--
+Carpetas organizadas 0,5
+Base de datos y su tabla 1
+Bootsrap 1
+Insertra tabla 2,5
+
+Documento (123456789), Nombre (ABCDEFG), Año de Nacimiento (INT, !Debe ser mayor de edad! la validacion se hace en el backend, No en el fronted), Celular, Sexo (1 o 2), Fecha Sys
+-->
